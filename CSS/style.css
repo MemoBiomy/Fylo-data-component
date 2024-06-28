@@ -1,0 +1,162 @@
+:root {
+--gradient: hsl(6, 100%, 80%) , hsl(335, 100%, 65%);
+--paleBlue: hsl(243, 100%, 93%);
+--grayishBlue: hsl(229, 7%, 55%);
+--darkBlue: hsl(228, 56%, 26%);
+--veryDarkBlue: hsl(229, 57%, 11%);
+--weightBold: 700;
+--weightRegular: 400;
+--fontFamily: "Raleway", sans-serif;
+--borderRadius: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/bg-desktop.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    font-family: var(--fontFamily);
+}
+
+.container {
+    display: flex;
+    align-items: end;
+    gap: 40px;
+}
+
+.card {
+    background-color: var(--darkBlue);
+    padding: 40px 0px 40px 43px;
+    border-radius: var(--borderRadius);
+    border-top-right-radius: 110px;
+    width: 340px;
+}
+
+.card .links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.links .image {
+    background-color: var(--veryDarkBlue);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.bar {
+    background-color: var(--darkBlue);
+    border-radius: var(--borderRadius);
+    width: 600px;
+    padding: 36px 40px;
+    font-family: var(--fontFamily);
+}
+
+.bar > p {
+    font-size: 16px;
+    color: var(--paleBlue);
+    margin-bottom: 15px;
+}
+
+.bar > p span.number {
+    color: var(--paleBlue);
+    font-weight: var(--weightBold);
+}
+
+.bar > p span.number .sec {
+    position: relative;
+    top: .3px;
+}
+
+.bar > p span.number .thir {
+    position: relative;
+    top: .6px;
+}
+
+.bar > div:first-of-type {
+    border-radius: 10px;
+    border: 3px solid var(--veryDarkBlue);
+    background-color: var(--veryDarkBlue);
+    height: 20px;
+    position: relative;
+}
+
+.bar > div:first-of-type > span {
+    height: 100%;
+    width: 70%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar > div:first-of-type > span::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: var(--paleBlue);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    right: 3px;
+}
+
+.bar .box {
+    position: absolute;
+    background-color: white;
+    padding: 20px 24px;
+    border-radius: var(--borderRadius);
+    right: 0;
+    color: var(--grayishBlue);
+    top: -130px;
+    font-size: 15px;
+}
+
+.bar .box::after {
+    content: "";
+    position: absolute;
+    border: 22px solid;
+    border-color: transparent white transparent transparent;
+    top: 100%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.bar .box p {
+    display: flex;
+    align-items: center;
+}
+
+.bar .box p > span {
+    color: var(--veryDarkBlue);
+    font-size: 40px;
+    font-weight: var(--weightBold);
+    margin-right: 10px;
+}
+
+.bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--paleBlue);
+    margin-top: 12px;
+    font-weight: var(--weightBold);
+    font-size: 16px;
+}
