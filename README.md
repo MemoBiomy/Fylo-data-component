@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution at frontend mentor](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [Solution at frontend mentor](https://www.frontendmentor.io/solutions/fylo-data-storage-component-html5---css3---flexbox-mdMhLCUeQb)
+- Live Site URL: [live site](https://memobiomy.github.io/Fylo-data-component/)
 
 ## My process
 
