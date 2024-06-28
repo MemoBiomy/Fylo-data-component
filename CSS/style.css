@@ -160,3 +160,32 @@ body {
     font-weight: var(--weightBold);
     font-size: 16px;
 }
+
+@media (max-width: 414px) {
+    body {
+        background-image: url(../images/bg-mobile.png);
+        background-size: cover;
+    }
+    .container {
+        flex-direction: column;
+        width: 320px;
+    }
+    .card {
+        width: 100%;
+    }
+    .bar {
+        width: 100%;
+    }
+    .bar .box {
+        top: auto;
+        bottom: -110px;
+        right: 40px;
+        padding: 18px 22px;
+    }
+    .bar .box p > span {
+        font-size: 26px;
+    }
+    .bar .box::after {
+        display: none;
+    }
+}
